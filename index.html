@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Островский. Купеческая Россия: Единство традиций</title>
+  <meta name="description" content="Интерактивный мультимедийный веб-гид к библиотечной выставке-панораме по пьесам А. Н. Островского и Дню народного единства.">
+  
+  <!-- Google Fonts: Cormorant Garamond, Forum, Manrope, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Forum&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="museum-theme">
+
+  <!-- Grain overlay for editorial texture -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom interactive cursor for desktop -->
+  <div class="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Top Museum Header Bar -->
+  <header class="museum-header" id="header">
+    <div class="header-inner">
+      <div class="header-left-group">
+        <a href="#hero" class="header-brand">А. Н. ОСТРОВСКИЙ</a>
+        
+        <nav class="header-nav" id="desktop-header-nav" aria-label="Разделы выставки">
+          <a href="#section-life" class="nav-link"><span>I</span> Быт</a>
+          <a href="#section-artifacts" class="nav-link"><span>II</span> Артефакты</a>
+          <a href="#section-map" class="nav-link"><span>III</span> Топография</a>
+          <a href="#section-book" class="nav-link"><span>IV</span> Книга</a>
+          <a href="#section-heroines" class="nav-link"><span>V</span> Героини</a>
+          <a href="#section-glossary" class="nav-link"><span>VI</span> Лексикон</a>
+          <a href="#section-chronology" class="nav-link"><span>VII</span> Летопись</a>
+          <a href="#section-unity" class="nav-link"><span>VIII</span> Меценаты</a>
+        </nav>
+      </div>
+
+      <div class="header-col header-right">
+        <button type="button" class="header-menu-btn" id="burger-btn" aria-label="Открыть оглавление выставки" aria-expanded="false">
+          <span class="menu-btn-bars">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </span>
+          <span class="menu-btn-text">ОГЛАВЛЕНИЕ</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Мобильное меню экспозиции" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-title-wrap">
+        <span class="drawer-kicker">ОГЛАВЛЕНИЕ ВЫСТАВКИ</span>
+        <h3 class="drawer-brand">А. Н. ОСТРОВСКИЙ</h3>
+      </div>
+      <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Закрыть меню">✕</button>
+    </div>
+    <div class="drawer-divider">❖ ❖ ❖</div>
+    <nav class="drawer-nav">
+      <a href="#section-life" class="drawer-link"><span class="drawer-roman">I</span><span class="drawer-text">Купеческий быт</span></a>
+      <a href="#section-artifacts" class="drawer-link"><span class="drawer-roman">II</span><span class="drawer-text">Предметный мир и артефакты</span></a>
+      <a href="#section-map" class="drawer-link"><span class="drawer-roman">III</span><span class="drawer-text">Топография Замоскворечья</span></a>
+      <a href="#section-book" class="drawer-link"><span class="drawer-roman">IV</span><span class="drawer-text">Книга-альманах</span></a>
+      <a href="#section-heroines" class="drawer-link"><span class="drawer-roman">V</span><span class="drawer-text">Драматургический излом</span></a>
+      <a href="#section-glossary" class="drawer-link"><span class="drawer-roman">VI</span><span class="drawer-text">Замоскворецкий лексикон</span></a>
+      <a href="#section-chronology" class="drawer-link"><span class="drawer-roman">VII</span><span class="drawer-text">Хронограф купечества</span></a>
+      <a href="#section-unity" class="drawer-link"><span class="drawer-roman">VIII</span><span class="drawer-text">Великие меценаты</span></a>
+      <a href="#section-team" class="drawer-link"><span class="drawer-roman">IX</span><span class="drawer-text">Выставочный паспорт</span></a>
+    </nav>
+    <div class="drawer-footer">
+      <span class="drawer-footer-badge">ЭКСПОЗИЦИЯ № 1859/1878</span>
+      <span class="drawer-footer-note">Панорама купеческой России XIX века</span>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- ========================================================
+         SCREEN 1: HERO SECTION (Главный арт «для литры.png»)
+         ======================================================== -->
+    <section class="screen-hero" id="hero">
+      
+      <!-- Fullscreen Atmospheric Art Background -->
+      <div class="hero-bg-container" aria-hidden="true">
+        <img 
+          src="assets/hero-art.png" 
+          alt="Авторское полотно: «Ключ над обрывом», Данил Габидуллин" 
+          class="hero-bg-art"
+          id="hero-art-img"
+        >
+        <div class="hero-bg-gradient-top"></div>
+        <div class="hero-bg-radial"></div>
+        <div class="hero-bg-gradient-bottom"></div>
+        <div class="hero-bg-vignette"></div>
+      </div>
+
+      <div class="hero-frame-container">
+        
+        <!-- Architectural outer border lines -->
+        <div class="arch-border arch-top"></div>
+        <div class="arch-border arch-bottom"></div>
+        <div class="arch-border arch-left"></div>
+        <div class="arch-border arch-right"></div>
+        
+        <!-- Decorative corner brackets -->
+        <div class="corner-bracket corner-tl">§ 01</div>
+        <div class="corner-bracket corner-tr">1823 — 1886</div>
+        <div class="corner-bracket corner-bl">ЗАМОСКВОРЕЧЬЕ</div>
+        <div class="corner-bracket corner-br">КАЛИНОВЪ</div>
+
+        <div class="hero-content-grid">
+          
+          <div class="hero-top-group">
+            <!-- Top Sub-Header -->
+            <div class="hero-subline">
+              <span class="subline-item">БИБЛИОТЕЧНАЯ ВЫСТАВКА-ПАНОРАМА</span>
+              <span class="subline-sep">✦</span>
+              <span class="subline-item">А. Н. ОСТРОВСКИЙ</span>
+              <span class="subline-sep">✦</span>
+              <span class="subline-item">ДЕНЬ НАРОДНОГО ЕДИНСТВА</span>
+            </div>
+
+            <!-- Monumental Title Layered over Art Frame -->
+            <div class="hero-title-wrap">
+              <h1 class="hero-title">
+                <span class="title-line title-line-1">ОСТРОВСКИЙ.</span>
+                <span class="title-line title-line-2"><em>Купеческая Россия</em></span>
+                <span class="title-line title-line-3">ЕДИНСТВО ТРАДИЦИЙ</span>
+              </h1>
+              <p class="hero-clean-lead">
+                Интерактивный путеводитель по миру русского купечества XIX века
+              </p>
+            </div>
+          </div>
+
+          <!-- Floating Hero Action Button -->
+          <div class="hero-clean-action-wrap">
+            <a href="#section-life" class="hero-read-btn" id="hero-read-trigger">
+              <span class="read-btn-text">ЧИТАТЬ</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SCREEN 2: АНАТОМИЯ КУПЕЧЕСКОГО БЫТА (Светлая бумага)
+         ======================================================== -->
+    <section class="screen-vintage-paper" id="section-life">
+      <div class="vintage-paper-container">
+        
+        <!-- Section Header -->
+        <header class="vintage-section-head reveal-on-scroll">
+          <div class="section-roman-marker">
+            <span class="marker-line"></span>
+            <span class="marker-num">РАЗДЕЛ I</span>
+            <span class="marker-line"></span>
+          </div>
+          <h2 class="vintage-title">I. Уклад Замоскворечья: Между счётами и самоваром</h2>
+          <div class="vintage-rule-ornament">❖ ❖ ❖</div>
+          <p class="vintage-lead">
+            Мир Островского начинается там, где кончается дворянский Петербург. 
+            Замоскворечье и волжские города середины XIX века — это государство в государстве. 
+            Здесь не говорят по-французски, но ворочают миллионами, боятся грома небесного, 
+            но еще больше — пересудов соседей.
+          </p>
+        </header>
+
+        <!-- Magazine / Almanac Layout Grid (Asymmetrical Anti-neuroslop Zine Spread) -->
+        <div class="editorial-magazine-spread">
+          
+          <!-- Top Row: Asymmetrical Feature Pair -->
+          <div class="editorial-pair-row">
+            
+            <!-- Story 1: Слово дороже векселя (Left Column) -->
+            <article class="almanac-editorial-card card-word-honor card-tilt reveal-on-scroll" data-tilt>
+              <div class="card-archival-header">
+                <span class="archival-stamp">ДОКУМЕНТЪ № 14 // ГИЛЬДИЯ</span>
+                <span class="card-roman">I</span>
+              </div>
+              
+              <div class="card-painting-wrap">
+                <img 
+                  src="assets/merchant-money.jpg" 
+                  alt="Купец, считающий деньги на деревянных счётах" 
+                  class="card-painting-img"
+                  loading="lazy"
+                >
+                <div class="painting-caption">«Купец за счётами», архивный этюд</div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Слово дороже векселя</h3>
+                <p class="card-text">
+                  Многотысячные сделки заключались без нотариусов и гербовой бумаги — ударом по рукам в трактире. 
+                  Формула <strong>«Слово купеческое»</strong> работала жестче любого закона: обманешь один раз — с тобой 
+                  перестанет здороваться вся биржа, а род разорится за месяц.
+                </p>
+                
+                <div class="card-factoid">
+                  <span class="factoid-label">ГИЛЬДЕЙСКИЙ ОБЫЧАЙ</span>
+                  <p class="factoid-text">Понятие «вылететь в трубу» означало исключение из купеческого сословия без права возврата.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Story 2: Чай как дипломатия и пытка (Center / Main Focal Feature) -->
+            <article class="almanac-editorial-card card-tea-ritual card-tilt reveal-on-scroll" data-tilt>
+              <div class="card-archival-header">
+                <span class="archival-stamp">ЗАМОСКВОРЕЧЬЕ // ОБРЯДЪ</span>
+                <span class="card-roman">II</span>
+              </div>
+              
+              <div class="card-painting-wrap tea-painting-large">
+                <img 
+                  src="assets/kustodiev-tea.jpg" 
+                  alt="Б. Кустодиев — Купчиха за чаем (1918)" 
+                  class="card-painting-img tea-kustodiev-img"
+                  style="object-position: center 20%;"
+                  loading="lazy"
+                >
+                <div class="painting-caption">Б. Кустодиев, «Купчиха за чаем» (1918) • Государственный Русский музей</div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Чай как дипломатия и пытка</h3>
+                <p class="card-text">
+                  Купеческое чаепитие длилось часами. Пили из глубоких блюдец, растопырив пальцы, 
+                  с куском колотого сахара вприкуску и полотенцем на шее, чтобы утирать пот. 
+                  Отказ выпить шестую чашку воспринимался хозяином дома как личное оскорбление.
+                </p>
+
+                <div class="card-factoid factoid-highlight">
+                  <span class="factoid-label">ПОВСЕДНЕВНЫЙ РИТУАЛ</span>
+                  <p class="factoid-text">Чай «до седьмого пота» был главной формой переговоров — за самоваром решались судьбы фабрик, капиталов и браков.</p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Bottom Row: Wide Panoramic Feature -->
+          <!-- Story 3: Крепость домашнего быта (Wide Panorama Feature) -->
+          <article class="almanac-editorial-card card-panorama-feature card-tilt reveal-on-scroll" data-tilt>
+            <div class="panorama-layout-inner">
+              <div class="card-painting-wrap panorama-painting-wrap">
+                <img 
+                  src="assets/zamoskvorechye-panorama.jpg" 
+                  alt="Старинная панорама Замоскворечья и Москвы-реки" 
+                  class="card-painting-img panorama-img"
+                  loading="lazy"
+                >
+                <div class="painting-caption">Панорама купеческого Замоскворечья, старинная гравюра</div>
+              </div>
+
+              <div class="panorama-story-body">
+                <div class="card-archival-header">
+                  <span class="archival-stamp">ДОМОСТРОЙ // АРХИТЕКТУРА ИЗОЛЯЦИИ</span>
+                  <span class="card-roman">III</span>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title">Крепость домашнего быта</h3>
+                  <p class="card-text">
+                    Высокий забор без окон на улицу, тяжелые дубовые засовы и цепные псы во дворе. 
+                    Внутри — патриархальный закон, где воля старшего в роду абсолютна, 
+                    а любая попытка вырваться за ворота приравнивается к бунту.
+                  </p>
+
+                  <div class="card-factoid">
+                    <span class="factoid-label">АРХИТЕКТУРА ИЗОЛЯЦИИ</span>
+                    <p class="factoid-text">Окна парадных комнат выходили только во внутренний сад. Город оставался за глухими деревянными стенами.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Archival Quote Strip on Paper -->
+        <div class="vintage-quote-banner reveal-on-scroll">
+          <div class="banner-bracket">«</div>
+          <blockquote class="banner-quote">
+            В Замоскворечье вы не услышите ни громкого смеха, ни торопливых шагов. 
+            Тут все размеренно веками: звонят к вечерне, запирают лавки, варят варенье и блюдут нерушимый чин.
+          </blockquote>
+          <cite class="banner-author">— Из очерков А. Н. Островского о московском быте</cite>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SCREEN: МУЗЕЙНЫЕ АРТЕФАКТЫ ЗАМОСКВОРЕЧЬЯ
+         ======================================================== -->
+    <section class="screen-artifacts" id="section-artifacts">
+      <div class="book-section-inner">
+        <header class="vintage-section-head reveal-on-scroll">
+          <div class="section-roman-marker marker-gold">
+            <span class="marker-line"></span>
+            <span class="marker-num">РАЗДЕЛ II // АРТЕФАКТЫ</span>
+            <span class="marker-line"></span>
+          </div>
+          <h2 class="book-main-title">Предметный мир: От счётов до золотого империала</h2>
+          <div class="unity-divider-ornament">❖ ❖ ❖</div>
+          <p class="book-intro-text">
+            Вещи в пьесах Островского — не просто реквизит, а действующие лица эпохи. 
+            Каждый артефакт обнажает невидимые пружины купеческой психологии и драмы.
+          </p>
+        </header>
+
+        <div class="artifacts-grid">
+          <!-- Artifact 1 -->
+          <div class="artifact-card card-tilt reveal-on-scroll" data-tilt>
+            <div class="artifact-top">
+              <span class="artifact-num">АРТЕФАКТЪ № 01 // ПРИКАЗЪ</span>
+            </div>
+            <h3 class="artifact-title">Деревянные купеческие счёты</h3>
+            <p class="artifact-desc">
+              Костяшки из мореного дуба и кости. Инструмент, на котором в полутемных лавках Ильинки и Замоскворечья считались миллионные состояния без единой записи в бухгалтерские книги.
+            </p>
+            <div class="artifact-meta">
+              «Слово купеческое крепче всякой расписки, а счёты помнят всё до копейки».
+            </div>
+          </div>
+
+          <!-- Artifact 2 -->
+          <div class="artifact-card card-tilt reveal-on-scroll" data-tilt>
+            <div class="artifact-top">
+              <span class="artifact-num">АРТЕФАКТЪ № 02 // СИМВОЛЪ</span>
+            </div>
+            <h3 class="artifact-title">Ключ от садовой калитки</h3>
+            <p class="artifact-desc">
+              Тяжелый латунный ключ, вложенный Варварой в ладонь Катерины («Гроза»). Рубикон между мертвым покоем калиновского домостроя и смертельным полетом к свободе и греху.
+            </p>
+            <div class="artifact-meta">
+              «Бросить его, бросить далеко, в реку кинуть, чтоб не нашли никогда... А ведь вот он, в руках!»
+            </div>
+          </div>
+
+          <!-- Artifact 3 -->
+          <div class="artifact-card card-tilt reveal-on-scroll" data-tilt>
+            <div class="artifact-top">
+              <span class="artifact-num">АРТЕФАКТЪ № 03 // ЖРЕБИЙ</span>
+            </div>
+            <h3 class="artifact-title">Золотой империал орлянки</h3>
+            <p class="artifact-desc">
+              Монета чистейшего золота, брошенная Кнуровым и Вожеватовым на парижскую поездку с Ларисой («Бесприданница»). Овеществление цинизма эпохи модерна, где честь разыгрывается в орлянку.
+            </p>
+            <div class="artifact-meta">
+              «Орёл или решка? — Орёл! — Ваша взяла. Я уступаю...»
+            </div>
+          </div>
+
+          <!-- Artifact 4 -->
+          <div class="artifact-card card-tilt reveal-on-scroll" data-tilt>
+            <div class="artifact-top">
+              <span class="artifact-num">АРТЕФАКТЪ № 04 // КАБАЛА</span>
+            </div>
+            <h3 class="artifact-title">Гербовый протестованный вексель</h3>
+            <p class="artifact-desc">
+              Юридическая удавка новой пореформенной России. Долговые расписки, на которых Островский, служивший в Московском коммерческом суде, наблюдал гибель и возвышение купеческих кланов.
+            </p>
+            <div class="artifact-meta">
+              «Свои люди — сочтемся! А чужим по векселю отдай сполна, либо долговая яма».
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SCREEN 2b: ИНТЕРАКТИВНАЯ ТОПОГРАФИЯ ЗАМОСКВОРЕЧЬЯ
+         ======================================================== -->
+    <section class="screen-vintage-paper screen-topography" id="section-map">
+      <div class="vintage-paper-container">
+        
+        <header class="vintage-section-head reveal-on-scroll">
+          <div class="section-roman-marker">
+            <span class="marker-line"></span>
+            <span class="marker-num">РАЗДЕЛ II // ТОПОГРАФИЯ</span>
+            <span class="marker-line"></span>
+          </div>
+          <h2 class="vintage-title">Карта невидимой Москвы: Топография Островского</h2>
+          <div class="vintage-rule-ornament">❖ ❖ ❖</div>
+          <p class="vintage-lead">
+            Замоскворечье Островского — не просто географический район за рекой, а замкнутая вселенная со своими границами, законами и святилищами. Исследуйте пять ключевых точек купеческой столицы.
+          </p>
+        </header>
+
+        <div class="topography-interactive-grid reveal-on-scroll">
+          
+          <!-- Landmarks List Tabs -->
+          <div class="topography-landmarks-list" role="tablist" aria-label="Купеческие ориентиры Москвы">
+            
+            <button type="button" class="landmark-card active" data-landmark="ordynka" role="tab" aria-selected="true">
+              <div class="landmark-badge">№ 01</div>
+              <div class="landmark-main">
+                <h3 class="landmark-title">Малая Ордынка, 9</h3>
+                <span class="landmark-role">Родовой дом драматурга • Патриархальный сад</span>
+              </div>
+              <span class="landmark-arrow">→</span>
+            </button>
+
+            <button type="button" class="landmark-card" data-landmark="gostiny" role="tab" aria-selected="false">
+              <div class="landmark-badge">№ 02</div>
+              <div class="landmark-main">
+                <h3 class="landmark-title">Старый Гостиный Двор</h3>
+                <span class="landmark-role">Ильинка • Сделки на «честное купеческое слово»</span>
+              </div>
+              <span class="landmark-arrow">→</span>
+            </button>
+
+            <button type="button" class="landmark-card" data-landmark="traktir" role="tab" aria-selected="false">
+              <div class="landmark-badge">№ 03</div>
+              <div class="landmark-main">
+                <h3 class="landmark-title">Трактир «Колокол»</h3>
+                <span class="landmark-role">Пятницкая улица • Переговоры «до седьмого пота»</span>
+              </div>
+              <span class="landmark-arrow">→</span>
+            </button>
+
+            <button type="button" class="landmark-card" data-landmark="tretyakovka" role="tab" aria-selected="false">
+              <div class="landmark-badge">№ 04</div>
+              <div class="landmark-main">
+                <h3 class="landmark-title">Лаврушинский переулок</h3>
+                <span class="landmark-role">Усадьба Третьяковых • Рождение национальной галереи</span>
+              </div>
+              <span class="landmark-arrow">→</span>
+            </button>
+
+            <button type="button" class="landmark-card" data-landmark="maly" role="tab" aria-selected="false">
+              <div class="landmark-badge">№ 05</div>
+              <div class="landmark-main">
+                <h3 class="landmark-title">Театральная площадь</h3>
+                <span class="landmark-role">Малый театр • «Дом Островского»</span>
+              </div>
+              <span class="landmark-arrow">→</span>
+            </button>
+
+          </div>
+
+          <!-- Dossier Showcase Panel -->
+          <div class="topography-dossier" id="topography-dossier">
+            <div class="dossier-inner">
+              <div class="dossier-stamp" id="dossier-stamp">АРХИВЪ // ОРИЕНТИРЪ № 01</div>
+              <h3 class="dossier-heading" id="dossier-heading">Малая Ордынка: Родовой дом и мир тишины</h3>
+              <div class="dossier-meta" id="dossier-meta">Адрес: Малая Ордынка, 9 • Дом причта церкви Покрова Богородицы</div>
+              <p class="dossier-text" id="dossier-text">
+                Здесь 31 марта 1823 года в семье судейского чиновника родился Александр Островский. За глухими деревянными заборами Ордынки колыхались вишневые сады, звенели колокола десятков замоскворецких храмов, а вечерами слышался неторопливый лай цепных собак. Именно здесь будущий классик впитал уникальный замоскворецкий диалект, певучую речь приказчиков и степенную поступь хозяев жизни.
+              </p>
+              <div class="dossier-quote-block">
+                <div class="quote-symbol">«</div>
+                <p class="dossier-quote" id="dossier-quote">
+                  «Замоскворечье не любит торопиться. Тут каждый дом — отдельное княжество со своими заборами и засовами».
+                </p>
+                <cite class="dossier-source" id="dossier-source">— А. Н. Островский, «Записки замоскворецкого жителя»</cite>
+              </div>
+              <div class="dossier-fact" id="dossier-fact">
+                <span class="fact-tag">ИСТОРИЧЕСКИЙ ФАКТ</span>
+                <span class="fact-text" id="dossier-fact-text">Отец драматурга Николай Федорович служил стряпчим в Московском коммерческом суде — все тяжбы и банкротства купечества проходили на глазах юного Александра.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SCREEN 3: ИНТЕРАКТИВНАЯ КНИГА-АЛЬМАНАХ
+         ======================================================== -->
+    <section class="screen-book-section" id="section-book">
+      <div class="book-section-inner">
+        
+        <!-- Section Header -->
+        <div class="book-header-group">
+          <div class="book-tag">
+            <span class="tag-bullet">❖</span>
+            <span>РАЗДЕЛ III // ТЕАТРАЛЬНЫЙ АЛЬМАНАХ</span>
+            <span class="tag-bullet">❖</span>
+          </div>
+          <h2 class="book-main-title">Излом эпох: Две драмы — два мира</h2>
+          <p class="book-intro-text">
+            Переверните страницы альманаха. Проследите, как за два десятилетия патриархальный страх «Грозы» (1859) 
+            переродился в ледяной расчет «Бесприданницы» (1878).
+          </p>
+        </div>
+
+        <!-- Book Navigation Bar -->
+        <div class="book-controls-bar">
+          <div class="book-spread-selector" role="tablist" aria-label="Развороты альманаха">
+            <button type="button" class="spread-tab active" data-spread="0" role="tab" aria-selected="true">
+              <span class="tab-num">I</span>
+              <span class="tab-text">Темное царство</span>
+            </button>
+            <button type="button" class="spread-tab" data-spread="1" role="tab" aria-selected="false">
+              <span class="tab-num">II</span>
+              <span class="tab-text">Кабаниха и Дикой</span>
+            </button>
+            <button type="button" class="spread-tab" data-spread="2" role="tab" aria-selected="false">
+              <span class="tab-num">III</span>
+              <span class="tab-text">Новые дельцы</span>
+            </button>
+            <button type="button" class="spread-tab" data-spread="3" role="tab" aria-selected="false">
+              <span class="tab-num">IV</span>
+              <span class="tab-text">Человек как товар</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Current Spread Status (Mobile & Accessible) -->
+        <div class="book-spread-status" aria-live="polite">
+          <span class="status-current" id="spread-counter">Разворот 1 из 4</span>
+          <span class="status-epoch" id="spread-epoch-tag">Эпоха: 1859 год // Пьеса «Гроза» — Тёмное царство Калинова</span>
+        </div>
+
+        <!-- Book Stage with Circular Side Navigation Buttons -->
+        <div class="book-stage-wrapper">
+          <button type="button" class="book-side-btn book-side-prev" id="book-side-prev" aria-label="Предыдущий разворот">
+            <svg class="book-side-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- 3D Book Layout Container -->
+          <div class="book-stage">
+            <div class="open-book" id="open-book">
+              
+              <!-- Spine gutter shadow -->
+              <div class="book-spine" aria-hidden="true"></div>
+
+              <!-- 3D Flipping Page Leaf (active during page turn animation) -->
+              <div class="book-flipper-leaf" id="book-flipper-leaf" aria-hidden="true">
+                <div class="flipper-face flipper-face-front" id="flipper-face-front"></div>
+                <div class="flipper-face flipper-face-back" id="flipper-face-back"></div>
+                <div class="flipper-shade" id="flipper-shade"></div>
+              </div>
+
+              <!-- ================= SPREAD 1 ================= -->
+              <div class="book-spread active" data-index="0">
+                <!-- Left Page -->
+                <div class="book-page page-left" data-page-side="left" role="button" tabindex="0" aria-label="Предыдущий разворот">
+                  <div class="page-top-bar">
+                    <div class="page-archival-stamp">
+                      <span class="stamp-seal">❖ ЦЕНЗУРА</span>
+                      <span class="stamp-text">С.-ПЕТЕРБУРГЪ // 1859 ГОДЪ</span>
+                    </div>
+                    <div class="page-corner page-corner-top-left">1859</div>
+                  </div>
+
+                  <div class="page-content">
+                    <div class="page-illustration-duo">
+                      <figure class="page-figure">
+                        <img 
+                          src="assets/church-vaults-decor.jpg" 
+                          alt="Эскиз декорации: Под сводами старинной церкви к драме «Гроза»" 
+                          class="page-img page-img-arch"
+                        >
+                        <figcaption class="fig-caption">«Под сводами церкви», эскиз декорации</figcaption>
+                      </figure>
+                      <figure class="page-figure">
+                        <img 
+                          src="assets/volga-archive.jpg" 
+                          alt="Архивный пейзаж Волги в сепии" 
+                          class="page-img page-img-arch"
+                        >
+                        <figcaption class="fig-caption">Волжский простор, архивное фото XIX века</figcaption>
+                      </figure>
+                    </div>
+                    <div class="page-curatorial-note">
+                      <span class="note-tag">КОНТЕКСТ ДЕЙСТВИЯ</span>
+                      <p>Калинов стоит на головокружительной высоте над великой рекой, но жители глядят не на простор, а под ноги — от страха перед грозой и старшими.</p>
+                    </div>
+                  </div>
+                  <div class="page-number-footer">
+                    <span class="page-turn-hint">← Разворот I</span>
+                    <span class="page-num-val">Стр. 24</span>
+                  </div>
+                </div>
+
+                <!-- Right Page -->
+                <div class="book-page page-right" data-page-side="right" role="button" tabindex="0" aria-label="Следующий разворот">
+                  <div class="page-top-bar">
+                    <div class="page-corner page-corner-top-right">ЧАСТЬ I</div>
+                    <div class="page-archival-stamp stamp-right">
+                      <span class="stamp-seal">МАЛЫЙ ТЕАТРЪ</span>
+                      <span class="stamp-text">ПРЕМЬЕРА // ОРИГИНАЛЪ</span>
+                    </div>
+                  </div>
+
+                  <div class="page-content">
+                    <span class="spread-play-tag">ДРАМА «ГРОЗА» (1859)</span>
+                    <h3 class="spread-chapter-title">Тёмное царство Калинова</h3>
+                    <div class="spread-divider"></div>
+                    
+                    <p class="spread-lead-p drop-cap-text">
+                      Вымышленный город Калинов на высоком берегу Волги — место, где время остановилось. 
+                      Здесь правит страх перед переменами. Старый купеческий домострой держится 
+                      не на любви, а на слепом подчинении внешней форме и родительской деспотии.
+                    </p>
+
+                    <div class="spread-quote-block">
+                      <div class="quote-symbol">«</div>
+                      <p class="quote-text">
+                        Жестокие нравы, сударь, в нашем городе, жестокие! В мещанстве, сударь, вы ничего, 
+                        кроме грубости да бедности нагольной, не увидите. И никогда нам, сударь, не выбиться из этой коры!
+                      </p>
+                      <cite class="quote-source">— Кулигин, местный механик-самоучка</cite>
+                    </div>
+
+                    <div class="spread-detail-box">
+                      <span class="detail-title">Символизм ключа</span>
+                      <p>Ключ от садовой калитки, который Варвара вкладывает в руку Катерины, — это порог между мертвым покоем дома Кабановых и смертельно опасным полетом на волю.</p>
+                    </div>
+                  </div>
+                  <div class="page-number-footer">
+                    <span class="page-num-val">Стр. 25</span>
+                    <span class="page-turn-hint">Листать дальше →</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ================= SPREAD 2 ================= -->
+              <div class="book-spread" data-index="1">
+                <!-- Left Page -->
+                <div class="book-page page-left" data-page-side="left" role="button" tabindex="0" aria-label="Предыдущий разворот">
+                  <div class="page-top-bar">
+                    <div class="page-archival-stamp">
+                      <span class="stamp-seal">❖ ТЕАТРАЛЬНЫЙ МУЗЕЙ</span>
+                      <span class="stamp-text">ЭСКИЗЫ КОСТЮМОВ</span>
+                    </div>
+                    <div class="page-corner page-corner-top-left">ХАРАКТЕРЫ</div>
+                  </div>
+
+                  <div class="page-content">
+                    <figure class="page-figure main-figure">
+                      <img 
+                        src="assets/varvara-costume.jpg" 
+                        alt="Варвара. Эскиз театрального костюма к спектаклю «Гроза»" 
+                        class="page-img single-costume page-img-arch"
+                      >
+                      <figcaption class="fig-caption">«Варвара», эскиз костюма Малого театра</figcaption>
+                    </figure>
+                    <div class="page-costume-annotation">
+                      <div class="annotation-badge">ЭТИКА ВЫЖИВАНИЯ</div>
+                      <p>«Делай что хочешь, только бы шито да крыто было» — циничная мораль младшего поколения, сломленного домашней тиранией.</p>
+                    </div>
+                  </div>
+                  <div class="page-number-footer">
+                    <span class="page-turn-hint">← Назад к части I</span>
+                    <span class="page-num-val">Стр. 26</span>
+                  </div>
+                </div>
+
+                <!-- Right Page -->
+                <div class="book-page page-right" data-page-side="right" role="button" tabindex="0" aria-label="Следующий разворот">
+                  <div class="page-top-bar">
+                    <div class="page-corner page-corner-top-right">ЧАСТЬ II</div>
+                    <div class="page-archival-stamp stamp-right">
+                      <span class="stamp-seal">ДЕЙСТВУЮЩИЕ ЛИЦА</span>
+                      <span class="stamp-text">САМОДУРЫ КАЛИНОВА</span>
+                    </div>
+                  </div>
+
+                  <div class="page-content">
+                    <span class="spread-play-tag">ДОМОСТРОЙ И САМОДУРСТВО</span>
+                    <h3 class="spread-chapter-title">Хозяева старого мира: Дикой и Кабаниха</h3>
+                    <div class="spread-divider"></div>
+
+                    <div class="character-profile">
+                      <h4 class="char-name">Марфа Игнатьевна Кабанова (Кабаниха)</h4>
+                      <p class="char-desc">
+                        Свято верит, что спасает семью от распада, но её ханжеское благочестие превращает дом в ледяную тюрьму. 
+                        Любовь подменяется неукоснительным соблюдением мертвого устава.
+                      </p>
+                      <blockquote class="char-quote">
+                        «Ничего-то не знают, никакого порядка... Прощайся с женой, да накажи ей, как жить без тебя!»
+                      </blockquote>
+                    </div>
+
+                    <div class="character-profile">
+                      <h4 class="char-name">Савел Прокофьевич Дикой</h4>
+                      <p class="char-desc">
+                        Власть грубого первобытного капитала, не признающего законов и судов. Деньги дают ему ощущение абсолютного всевластия и безнаказанности.
+                      </p>
+                      <blockquote class="char-quote">
+                        «Ведь я знаю, что не надо бы ругаться, а ругаюсь! Потому — кто же мне запретит?»
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="page-number-footer">
+                    <span class="page-num-val">Стр. 27</span>
+                    <span class="page-turn-hint">Листать к части III →</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ================= SPREAD 3 ================= -->
+              <div class="book-spread" data-index="2">
+                <!-- Left Page -->
+                <div class="book-page page-left" data-page-side="left" role="button" tabindex="0" aria-label="Предыдущий разворот">
+                  <div class="page-top-bar">
+                    <div class="page-archival-stamp">
+                      <span class="stamp-seal">❖ ВОЛГА 1878</span>
+                      <span class="stamp-text">КУРОРТНЫЙ БРЯХИМОВЪ</span>
+                    </div>
+                    <div class="page-corner page-corner-top-left">1878</div>
+                  </div>
+
+                  <div class="page-content">
+                    <figure class="page-figure">
+                      <img 
+                        src="assets/bespridannica-larisa-paratov.jpg" 
+                        alt="Иллюстрация к драме «Бесприданница»: Лариса Огудалова и Паратов в белом костюме на волжской набережной" 
+                        class="page-img page-img-arch"
+                      >
+                      <figcaption class="fig-caption">«Лариса и Паратов на набережной Бряхимова», драма «Бесприданница»</figcaption>
+                    </figure>
+                    <div class="page-curatorial-note">
+                      <span class="note-tag">ЭВОЛЮЦИЯ СОСЛОВИЯ</span>
+                      <p>Вместо темных купеческих кафтанов — безупречные парижские сюртуки и фраки. Но под европейским лоском скрывается еще более безжалостный хищник.</p>
+                    </div>
+                  </div>
+                  <div class="page-number-footer">
+                    <span class="page-turn-hint">← Назад к части II</span>
+                    <span class="page-num-val">Стр. 28</span>
+                  </div>
+                </div>
+
+                <!-- Right Page -->
+                <div class="book-page page-right" data-page-side="right" role="button" tabindex="0" aria-label="Следующий разворот">
+                  <div class="page-top-bar">
+                    <div class="page-corner page-corner-top-right">ЧАСТЬ III</div>
+                    <div class="page-archival-stamp stamp-right">
+                      <span class="stamp-seal">НОВАЯ ЭПОХА</span>
+                      <span class="stamp-text">БИРЖА И ПАРОХОДЫ</span>
+                    </div>
+                  </div>
+
+                  <div class="page-content">
+                    <span class="spread-play-tag">ДРАМА «БЕСПРИДАННИЦА» (1878)</span>
+                    <h3 class="spread-chapter-title">Новые дельцы и власть расчёта</h3>
+                    <div class="spread-divider"></div>
+
+                    <p class="spread-lead-p drop-cap-text">
+                      Проходит всего двадцать лет — и купечество меняется до неузнаваемости. 
+                      Дети бывших лавочников сбривают бороды, надевают европейские костюмы, пьют дорогое шампанское 
+                      и покупают пароходы. На смену кулаку Дикого приходит холодный, циничный расчёт 
+                      Кнурова, Вожеватова и блестящего барина-дельца Паратова.
+                    </p>
+
+                    <div class="spread-quote-block">
+                      <div class="quote-symbol">«</div>
+                      <p class="quote-text">
+                        Честное купеческое слово — вещь хорошая, но при свидетелях оно как-то надежнее.
+                      </p>
+                      <cite class="quote-source">— Василий Данилыч Вожеватов, молодой купец-европеец</cite>
+                    </div>
+
+                    <div class="contrast-badge">
+                      <span class="badge-title">ПАРАДОКС ЭПОХИ</span>
+                      <p>В «Грозе» грех карался божьим судом и совестью; в «Бесприданнице» стыд исчез — осталась только рентабельность.</p>
+                    </div>
+                  </div>
+                  <div class="page-number-footer">
+                    <span class="page-num-val">Стр. 29</span>
+                    <span class="page-turn-hint">Листать к части IV →</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ================= SPREAD 4 ================= -->
+              <div class="book-spread" data-index="3">
+                <!-- Left Page -->
+                <div class="book-page page-left" data-page-side="left" role="button" tabindex="0" aria-label="Предыдущий разворот">
+                  <div class="page-top-bar">
+                    <div class="page-archival-stamp">
+                      <span class="stamp-seal">❖ РЫНОКЪ И ВЕЩИ</span>
+                      <span class="stamp-text">СУКОННЫЕ РЯДЫ</span>
+                    </div>
+                    <div class="page-corner page-corner-top-left">ТОРГЪ</div>
+                  </div>
+
+                  <div class="page-content">
+                    <figure class="page-figure">
+                      <img 
+                        src="assets/merchant-shop.jpg" 
+                        alt="Купеческая торговая лавка с тканями в торговых рядах" 
+                        class="page-img page-img-arch"
+                      >
+                      <figcaption class="fig-caption">Купеческая суконная лавка в гостином дворе</figcaption>
+                    </figure>
+                    <div class="page-curatorial-note">
+                      <span class="note-tag">ТОВАРНЫЙ ФЕТИШИЗМ</span>
+                      <p>Когда рыночные законы проникают в семью, человеческое чувство измеряется золотым империалом и содержанием на парижской выставке.</p>
+                    </div>
+                  </div>
+                  <div class="page-number-footer">
+                    <span class="page-turn-hint">← Назад к части III</span>
+                    <span class="page-num-val">Стр. 30</span>
+                  </div>
+                </div>
+
+                <!-- Right Page -->
+                <div class="book-page page-right" data-page-side="right" role="button" tabindex="0" aria-label="Следующий разворот">
+                  <div class="page-top-bar">
+                    <div class="page-corner page-corner-top-right">ЧАСТЬ IV</div>
+                    <div class="page-archival-stamp stamp-right">
+                      <span class="stamp-seal">ФИНАЛЪ ДРАМЫ</span>
+                      <span class="stamp-text">ВЫСТАВКА В ПАРИЖЕ</span>
+                    </div>
+                  </div>
+
+                  <div class="page-content">
+                    <span class="spread-play-tag">КУЛЬМИНАЦИЯ ТОРГА</span>
+                    <h3 class="spread-chapter-title">Человек как товар</h3>
+                    <div class="spread-divider"></div>
+
+                    <p class="spread-lead-p drop-cap-text">
+                      В новом мире продается и покупается всё — от быстроходного парохода «Ласточка» 
+                      до человеческого достоинства, а судьбу Ларисы Огудаловой цинично решают броском золотой монеты: 
+                      <em>«орёл или решка»</em>.
+                    </p>
+
+                    <div class="dialogue-box">
+                      <div class="dialogue-line">
+                        <span class="speaker">Паратов:</span>
+                        <span class="speech">«У меня, Мокий Парменыч, ничего заветного нет; найду выгоду, так всё продам, что угодно».</span>
+                      </div>
+                      <div class="dialogue-line">
+                        <span class="speaker">Лариса:</span>
+                        <span class="speech">«Они правы, я вещь, а не человек... Наконец слово для меня найдено, вы нашли его».</span>
+                      </div>
+                    </div>
+
+                    <div class="spread-detail-box highlight-box">
+                      <span class="detail-title">Финал купеческого цинизма</span>
+                      <p>Кнуров и Вожеватов не спорят о любви: они делят монополию на роскошь, где живой человек низведен до статуса породистой лошади или парохода.</p>
+                    </div>
+                  </div>
+                  <div class="page-number-footer">
+                    <span class="page-num-val">Стр. 31</span>
+                    <span class="page-turn-hint">Финал книги</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <button type="button" class="book-side-btn book-side-next" id="book-side-next" aria-label="Следующий разворот">
+            <svg class="book-side-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Book Navigation Helper Hint -->
+        <div class="book-hint-row">
+          <span>Кликайте по страницам книги, используйте боковые стрелки ‹ › или клавиши ← → на клавиатуре</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SCREEN 3b: ДРАМАТУРГИЧЕСКИЙ ИЗЛОМ: КАТЕРИНА VS ЛАРИСА
+         ======================================================== -->
+    <section class="screen-heroines" id="section-heroines">
+      <div class="heroines-container">
+        
+        <header class="heroines-head reveal-on-scroll">
+          <div class="section-roman-marker marker-gold">
+            <span class="marker-line"></span>
+            <span class="marker-num">РАЗДЕЛ IV // ДРАМАТУРГИЧЕСКИЙ ИЗЛОМ</span>
+            <span class="marker-line"></span>
+          </div>
+          <h2 class="heroines-title">Два женских бунта: Катерина и Лариса</h2>
+          <div class="unity-divider-ornament">✦ ✦ ✦</div>
+          <p class="heroines-lead">
+            Два десятилетия разделили две великие драмы Островского на волжском берегу. 
+            В 1859 году Катерина Кабанова бросает вызов божьему суду и родовому страху Калинова. 
+            В 1878 году Лариса Огудалова сталкивается с чудовищем пострашнее Кабанихи — с миром, где любовь покупается, как пароход.
+          </p>
+        </header>
+
+        <div class="heroines-comparison-grid reveal-on-scroll">
+          
+          <!-- Column 1: Katerina -->
+          <article class="heroine-column heroine-katerina">
+            <div class="heroine-arch-header">
+              <span class="heroine-year-badge">1859 • ДРАМА «ГРОЗА»</span>
+              <h3 class="heroine-name">Катерина Кабанова</h3>
+              <span class="heroine-archetype">«Луч света в тёмном царстве»</span>
+            </div>
+
+            <div class="heroine-visual-arch">
+              <img src="assets/hero-art.png" alt="Катерина на обрыве" class="heroine-img" style="object-position: center 30%;">
+              <div class="heroine-visual-badge">КЛЮЧ И ОМУТ</div>
+            </div>
+
+            <div class="heroine-traits">
+              <div class="trait-row">
+                <span class="trait-label">Мир вокруг:</span>
+                <span class="trait-val">Патриархальный Калинов, глухие заборы домостроя, страх греха и небесной грозы</span>
+              </div>
+              <div class="trait-row">
+                <span class="trait-label">Внутренний нерв:</span>
+                <span class="trait-val">Чистая совесть. Органическая неспособность жить во лжи («шито да крыто»)</span>
+              </div>
+              <div class="trait-row">
+                <span class="trait-label">Предмет-символ:</span>
+                <span class="trait-val">Ключ от калитки — символ запретного чувства и смертельного полета на волю</span>
+              </div>
+            </div>
+
+            <div class="heroine-quote-card">
+              <div class="quote-symbol">«</div>
+              <p class="heroine-quote">
+                «Отчего люди не летают так, как птицы? Знаешь, мне иногда кажется, что я птица. 
+                Когда стоишь на горе, так тебя и тянет лететь...»
+              </p>
+              <cite class="heroine-cite">— Монолог Катерины, Действие 2</cite>
+            </div>
+
+            <div class="heroine-verdict">
+              <span class="verdict-tag">ИТОГ БУНТА</span>
+              <p>Смерть как освобождение от душного лицемерия. Её гибель навсегда взламывает мертвый покой калиновского домостроя.</p>
+            </div>
+          </article>
+
+          <!-- Center Divider Line & Medal -->
+          <div class="heroines-divider-center" aria-hidden="true">
+            <div class="center-line"></div>
+            <div class="center-crest">
+              <span class="crest-year">1859</span>
+              <span class="crest-icon">❖</span>
+              <span class="crest-label">20 ЛЕТ</span>
+              <span class="crest-icon">❖</span>
+              <span class="crest-year">1878</span>
+            </div>
+            <div class="center-line"></div>
+          </div>
+
+          <!-- Column 2: Larisa -->
+          <article class="heroine-column heroine-larisa">
+            <div class="heroine-arch-header">
+              <span class="heroine-year-badge">1878 • ДРАМА «БЕСПРИДАННИЦА»</span>
+              <h3 class="heroine-name">Лариса Огудалова</h3>
+              <span class="heroine-archetype">«Человек, низведенный до вещи»</span>
+            </div>
+
+            <div class="heroine-visual-arch">
+              <img src="assets/bespridannica-larisa-paratov.jpg" alt="Лариса и Паратов" class="heroine-img" style="object-position: center 20%;">
+              <div class="heroine-visual-badge">ЗОЛОТОЙ ИМПЕРИАЛ</div>
+            </div>
+
+            <div class="heroine-traits">
+              <div class="trait-row">
+                <span class="trait-label">Мир вокруг:</span>
+                <span class="trait-val">Европейский лоск Бряхимова, шампанское, биржевой цинизм, культ быстрой наживы</span>
+              </div>
+              <div class="trait-row">
+                <span class="trait-label">Внутренний нерв:</span>
+                <span class="trait-val">Жажда подлинной любви среди хищников, приценивающихся к ней как к дорогому лоту</span>
+              </div>
+              <div class="trait-row">
+                <span class="trait-label">Предмет-символ:</span>
+                <span class="trait-val">Золотой империал орлянки и пистолет — атрибуты торгов и смертельного выкупа</span>
+              </div>
+            </div>
+
+            <div class="heroine-quote-card card-gold-quote">
+              <div class="quote-symbol">«</div>
+              <p class="heroine-quote">
+                «Я искала любви и не нашла... На меня смотрели и смотрят, как на забаву. 
+                Никто не постарался заглянуть ко мне в душу, я ни от кого не видела сочувствия... Я вещь!»
+              </p>
+              <cite class="heroine-cite">— Монолог Ларисы, Действие 4</cite>
+            </div>
+
+            <div class="heroine-verdict verdict-gold">
+              <span class="verdict-tag">ИТОГ БУНТА</span>
+              <p>«Благодарю вас...» — роковой выстрел Карандышева спасает Ларису от унизительного положения «дорогой игрушки» на парижской выставке.</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SCREEN 4: ИНТЕРАКТИВНЫЙ ГЛОССАРИЙ КУПЕЧЕСКОГО БЫТА
+         ======================================================== -->
+    <section class="screen-glossary" id="section-glossary">
+      <div class="glossary-container">
+        
+        <div class="glossary-head reveal-on-scroll">
+          <div class="section-roman-marker">
+            <span class="marker-line"></span>
+            <span class="marker-num">РАЗДЕЛ V // ЛЕКСИКОН КУПЕЧЕСТВА</span>
+            <span class="marker-line"></span>
+          </div>
+          <h2 class="glossary-title">Замоскворецкий Лексикон: Язык кошелька и совести</h2>
+          <p class="glossary-sub">
+            А. Н. Островский открыл для русской литературы сочный, кованый язык купечества. 
+            Нажмите на карточку термина, чтобы узнать его подлинное значение в пьесах и быту.
+          </p>
+        </div>
+
+        <div class="glossary-grid" id="glossary-grid">
+          
+          <button type="button" class="term-card" data-term="samodur">
+            <div class="term-corner">§ 01</div>
+            <h3 class="term-name">Самодур</h3>
+            <p class="term-short">Человек, действующий по прихоти и праву сильного кошелька.</p>
+            <span class="term-action">Раскрыть термин →</span>
+          </button>
+
+          <button type="button" class="term-card" data-term="slovo">
+            <div class="term-corner">§ 02</div>
+            <h3 class="term-name">Слово купеческое</h3>
+            <p class="term-short">Устная клятва, заменявшая векселя и нотариальные печати.</p>
+            <span class="term-action">Раскрыть термин →</span>
+          </button>
+
+          <button type="button" class="term-card" data-term="chay">
+            <div class="term-corner">§ 03</div>
+            <h3 class="term-name">Чай с полотенцем</h3>
+            <p class="term-short">Многочасовой ритуал переговоров «до седьмого пота».</p>
+            <span class="term-action">Раскрыть термин →</span>
+          </button>
+
+          <button type="button" class="term-card" data-term="lastochka">
+            <div class="term-corner">§ 04</div>
+            <h3 class="term-name">Пароход «Ласточка»</h3>
+            <p class="term-short">Символ индустриальной мощи новых волжских дельцов.</p>
+            <span class="term-action">Раскрыть термин →</span>
+          </button>
+
+          <button type="button" class="term-card" data-term="domostroy">
+            <div class="term-corner">§ 05</div>
+            <h3 class="term-name">Тяжба и Радéние</h3>
+            <p class="term-short">Судебные войны купеческих фамилий и фанатичное благочестие.</p>
+            <span class="term-action">Раскрыть термин →</span>
+          </button>
+
+          <button type="button" class="term-card" data-term="orel">
+            <div class="term-corner">§ 06</div>
+            <h3 class="term-name">Орёл или Решка</h3>
+            <p class="term-short">Золотой империал как циничный арбитр судьбы бесприданницы.</p>
+            <span class="term-action">Раскрыть термин →</span>
+          </button>
+
+          <button type="button" class="term-card" data-term="bespridannica">
+            <div class="term-corner">§ 07</div>
+            <h3 class="term-name">Бесприданница</h3>
+            <p class="term-short">Девушка благородного рода без состояния — живой лот на купеческом аукционе.</p>
+            <span class="term-action">Раскрыть термин →</span>
+          </button>
+
+          <button type="button" class="term-card" data-term="veksel">
+            <div class="term-corner">§ 08</div>
+            <h3 class="term-name">Вексель и Кабала</h3>
+            <p class="term-short">Финансовые тиски нового времени: долговые расписки, разорявшие дворян и крестьян.</p>
+            <span class="term-action">Раскрыть термин →</span>
+          </button>
+
+          <button type="button" class="term-card" data-term="bankrotstvo">
+            <div class="term-corner">§ 09</div>
+            <h3 class="term-name">«Свои люди — сочтёмся»</h3>
+            <p class="term-short">Ложное банкротство, циничный приказчик и знаменитая замоскворецкая долговая яма.</p>
+            <span class="term-action">Раскрыть термин →</span>
+          </button>
+
+        </div>
+
+        <!-- Term Detail Modal / Popover Display -->
+        <div class="term-modal-backdrop" id="term-modal" aria-hidden="true">
+          <div class="term-modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-term-title">
+            <button type="button" class="term-modal-close" id="term-modal-close" aria-label="Закрыть окно">✕</button>
+            <div class="term-modal-content" id="term-modal-content">
+              <!-- Injected by script.js -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SCREEN 5b: ХРОНОГРАФ РУССКОГО КУПЕЧЕСТВА (1850 — 1900)
+         ======================================================== -->
+    <section class="screen-vintage-paper screen-chronology" id="section-chronology">
+      <div class="vintage-paper-container">
+        
+        <header class="vintage-section-head reveal-on-scroll">
+          <div class="section-roman-marker">
+            <span class="marker-line"></span>
+            <span class="marker-num">РАЗДЕЛ VI // ЛЕТОПИСЬ ЭПОХИ</span>
+            <span class="marker-line"></span>
+          </div>
+          <h2 class="vintage-title">Хронограф купечества: Путь к национальному единству</h2>
+          <div class="vintage-rule-ornament">❖ ❖ ❖</div>
+          <p class="vintage-lead">
+            За полвека русское купечество прошло путь от запертых сундуков Замоскворечья до созидания общенародной культуры и великих музеев.
+          </p>
+        </header>
+
+        <div class="chronology-timeline reveal-on-scroll">
+          
+          <!-- Step 1 -->
+          <div class="timeline-item">
+            <div class="timeline-year-col">
+              <span class="t-year">1850</span>
+              <span class="t-roman">I</span>
+            </div>
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-stem"></div>
+            </div>
+            <div class="timeline-card">
+              <span class="card-kicker">ОТКРЫТИЕ ЗАМОСКВОРЕЧЬЯ</span>
+              <h3 class="card-timeline-title">«Свои люди — сочтёмся!»</h3>
+              <p class="card-timeline-desc">
+                Островский печатает пьесу о фиктивном банкротстве купца Большова. 
+                Царь Николай I лично накладывает цензурный запрет («напрасно печатано, играть же запретить»), 
+                а автора увольняют из суда под гласный надзор полиции. Россия впервые увидела купечество без романтических прикрас.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-item">
+            <div class="timeline-year-col">
+              <span class="t-year">1859</span>
+              <span class="t-roman">II</span>
+            </div>
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-stem"></div>
+            </div>
+            <div class="timeline-card">
+              <span class="card-kicker">МАНИФЕСТ ПЕРЕМЕН</span>
+              <h3 class="card-timeline-title">«Гроза» и раскол домостроя</h3>
+              <p class="card-timeline-desc">
+                Триумфальная премьера «Грозы» в Малом театре. Статья Н. А. Добролюбова «Тёмное царство» 
+                превращает образ Катерины в символ назревшего национального протеста против душного патриархального застоя.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-item">
+            <div class="timeline-year-col">
+              <span class="t-year">1861</span>
+              <span class="t-roman">III</span>
+            </div>
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-stem"></div>
+            </div>
+            <div class="timeline-card">
+              <span class="card-kicker">ВЕЛИКИЕ РЕФОРМЫ</span>
+              <h3 class="card-timeline-title">Отмена крепостного права</h3>
+              <p class="card-timeline-desc">
+                Освобождение крестьян дает мощный импульс рынку. Начинается бурное строительство железных дорог, 
+                текстильных мануфактур и речного пароходства. Купечество превращается в главную промышленную силу страны.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-item">
+            <div class="timeline-year-col">
+              <span class="t-year">1878</span>
+              <span class="t-roman">IV</span>
+            </div>
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-stem"></div>
+            </div>
+            <div class="timeline-card">
+              <span class="card-kicker">ТРИУМФ КАПИТАЛА</span>
+              <h3 class="card-timeline-title">«Бесприданница» на сцене</h3>
+              <p class="card-timeline-desc">
+                Островский фиксирует приход нового поколения дельцов — с парижскими манерами, пароходами и биржевыми спекуляциями. 
+                Пьеса звучит грозным предостережением: когда всё становится товаром, гибнет человеческое достоинство.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-item">
+            <div class="timeline-year-col">
+              <span class="t-year">1892</span>
+              <span class="t-roman">V</span>
+            </div>
+            <div class="timeline-marker">
+              <div class="marker-dot highlight-dot"></div>
+              <div class="marker-stem"></div>
+            </div>
+            <div class="timeline-card card-timeline-highlight">
+              <span class="card-kicker kicker-gold">СОБОРНОЕ ЕДИНСТВО</span>
+              <h3 class="card-timeline-title">Дар Павла Третьякова Москве</h3>
+              <p class="card-timeline-desc">
+                Павел Третьяков безвозмездно передает городу уникальное собрание отечественного искусства. 
+                Купеческий капитал совершает качественный эволюционный скачок: от накопления в сундуках — к общенародному служению и объединению духовного пространства России.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SCREEN 6: СИЛА В ЕДИНСТВЕ — ВЕЛИКИЕ МЕЦЕНАТЫ
+         ======================================================== -->
+    <section class="screen-unity" id="section-unity">
+      <div class="unity-container">
+        
+        <!-- Section Header -->
+        <header class="unity-head reveal-on-scroll">
+          <div class="section-roman-marker marker-gold">
+            <span class="marker-line"></span>
+            <span class="marker-num">РАЗДЕЛ VII // ДЕНЬ НАРОДНОГО ЕДИНСТВА</span>
+            <span class="marker-line"></span>
+          </div>
+          <h2 class="unity-title">VII. От капитала — к служению: Как купечество объединило русскую культуру</h2>
+          <div class="unity-divider-ornament">✦ ✦ ✦</div>
+          <p class="unity-lead">
+            Островский показал купечество в момент его исторического взросления. 
+            Когда эпоха дикого самодурства ушла в прошлое, купеческий капитал третьей волны стал главной 
+            созидательной силой страны. Они перестали прятать сундуки за глухими заборами — 
+            и построили национальные музеи, театры и больницы, подарив их всему народу.
+          </p>
+        </header>
+
+        <!-- Centerpiece Fair Painting (Кустодиев: Соборность и ярмарка) -->
+        <div class="unity-fair-banner reveal-on-scroll">
+          <div class="fair-art-frame">
+            <img 
+              src="assets/kustodiev-fair.jpg" 
+              alt="Б. Кустодиев — Народное гуляние и ярмарка у белокаменного храма" 
+              class="fair-img"
+              loading="lazy"
+            >
+            <div class="fair-overlay-vignette" aria-hidden="true"></div>
+            <div class="fair-caption">
+              <span class="caption-tag">ОБРАЗ ЕДИНСТВА</span>
+              <p>Б. Кустодиев, «Ярмарка у храма». Праздник, где купец, ремесленник, крестьянин и интеллигент соединялись в едином соборном пространстве русской культуры.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Patrons Museum Gallery -->
+        <div class="patrons-gallery">
+          
+          <!-- Patron 1: Третьяков -->
+          <article class="patron-card" data-tilt>
+            <div class="patron-frame">
+              <div class="patron-portrait-wrap">
+                <img 
+                  src="assets/tretyakov.jpg" 
+                  alt="Портрет Павла Михайловича Третьякова" 
+                  class="patron-img"
+                  loading="lazy"
+                >
+                <div class="patron-corner-ornament"></div>
+              </div>
+              <div class="patron-info">
+                <span class="patron-years">1832 — 1898</span>
+                <h3 class="patron-name">Павел Михайлович Третьяков</h3>
+                <div class="patron-role">Создатель главной сокровищницы русского искусства</div>
+                <div class="patron-rule"></div>
+                <p class="patron-desc">
+                  Скромный в быту промышленник, который десятилетиями скупал полотна русских художников-передвижников. 
+                  В 1892 году он безвозмездно передал всю свою коллекцию вместе со зданием галереи в дар Москве — 
+                  <strong>«для всеобщего народного просвещения»</strong>.
+                </p>
+                <div class="patron-legacy">
+                  <span class="legacy-title">ГЛАВНЫЙ ДАР СТРАНЕ:</span>
+                  <span class="legacy-value">Государственная Третьяковская галерея</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Patron 2: Мамонтов -->
+          <article class="patron-card" data-tilt>
+            <div class="patron-frame">
+              <div class="patron-portrait-wrap">
+                <img 
+                  src="assets/mamontov.jpg" 
+                  alt="Портрет Саввы Ивановича Мамонтова" 
+                  class="patron-img"
+                  loading="lazy"
+                >
+                <div class="patron-corner-ornament"></div>
+              </div>
+              <div class="patron-info">
+                <span class="patron-years">1841 — 1918</span>
+                <h3 class="patron-name">Савва Иванович Мамонтов</h3>
+                <div class="patron-role">«Московский Медичи» и реформатор оперной сцены</div>
+                <div class="patron-rule"></div>
+                <p class="patron-desc">
+                  Строил железные дороги на Русский Север и одновременно объединил в подмосковном Абрамцеве 
+                  гениев эпохи — Врубеля, Серова, Васнецова, Поленова. Основал Частную русскую оперу, 
+                  открыв миру Шаляпина и превратив декорации спектаклей (в том числе по Островскому) в высокое искусство.
+                </p>
+                <div class="patron-legacy">
+                  <span class="legacy-title">ГЛАВНЫЙ ДАР СТРАНЕ:</span>
+                  <span class="legacy-value">Абрамцевский художественный кружок и русская частная опера</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Patron 3: Морозов -->
+          <article class="patron-card" data-tilt>
+            <div class="patron-frame">
+              <div class="patron-portrait-wrap">
+                <img 
+                  src="assets/morozov.jpg" 
+                  alt="Портрет Саввы Тимофеевича Морозова" 
+                  class="patron-img"
+                  loading="lazy"
+                >
+                <div class="patron-corner-ornament"></div>
+              </div>
+              <div class="patron-info">
+                <span class="patron-years">1862 — 1905</span>
+                <h3 class="patron-name">Савва Тимофеевич Морозов</h3>
+                <div class="patron-role">Меценат русского театра и промышленный первопроходец</div>
+                <div class="patron-rule"></div>
+                <p class="patron-desc">
+                  Текстильный магнат, построивший передовые рабочие городки с бесплатными больницами и школами. 
+                  Именно на средства Морозова было реконструировано здание Московского Художественного театра (МХТ) 
+                  в Камергерском переулке, где русская драматургия обрела новый дом.
+                </p>
+                <div class="patron-legacy">
+                  <span class="legacy-title">ГЛАВНЫЙ ДАР СТРАНЕ:</span>
+                  <span class="legacy-value">Дом МХТ в Камергерском и социальные реформы производства</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Monumental Ostrovsky Fullscreen Quote -->
+        <div class="monumental-quote-section reveal-on-scroll">
+          <div class="quote-border-line"></div>
+          <div class="quote-crest">❖ ОСТРОВСКИЙ ❖</div>
+          <blockquote class="grand-quote">
+            «Радость не вечна, печаль не бесконечна, а человек — на всё человек, чтобы жить да надеяться».
+          </blockquote>
+          <cite class="grand-cite">Александр Николаевич Островский</cite>
+          <div class="quote-border-line"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================
+       SCREEN 6: ПОДВАЛ (FOOTER) С ИНТЕРАКТИВНЫМИ КАРТОЧКАМИ КОМАНДЫ
+       ======================================================== -->
+  <footer class="museum-footer" id="section-team">
+    <div class="footer-container">
+      
+      <!-- Top Colophon Info -->
+      <div class="colophon-header">
+        <div class="colophon-title-block">
+          <span class="colophon-tag">КОЛОФОН // ВЫСТАВОЧНЫЙ ПАСПОРТ</span>
+          <h2 class="colophon-brand">Театр Островского: Единство традиций</h2>
+          <p class="colophon-subtitle">Специально для выставки библиотеки колледжа к Дню народного единства</p>
+        </div>
+        <div class="colophon-year-badge">
+          <span class="year-num">2026</span>
+          <span class="year-label">ЧЕЛЯБИНСК</span>
+        </div>
+      </div>
+
+      <div class="footer-divider-line"></div>
+
+      <!-- Interactive Team List with Popovers -->
+      <div class="team-showcase-section">
+        <div class="team-heading-row">
+          <h3 class="team-section-title">Над проектом работали</h3>
+          <p class="team-hint">Наведите курсор или коснитесь имени, чтобы узнать роль участника</p>
+        </div>
+
+        <ul class="team-list" id="team-list" role="list">
+          
+          <!-- Member 1 -->
+          <li class="team-member-item" tabindex="0">
+            <div class="member-bar">
+              <span class="member-idx">01</span>
+              <span class="member-name">Мельников Семён Дмитриевич</span>
+              <span class="member-icon-trigger">+</span>
+            </div>
+            
+            <!-- Popover Card -->
+            <div class="member-popover" role="tooltip">
+              <div class="popover-texture" aria-hidden="true"></div>
+              <div class="popover-badge">Лидер команды</div>
+              <h4 class="popover-role">UX/UI Дизайнер • Создание веб-сайта</h4>
+              <p class="popover-desc">
+                Архитектура цифрового гида, проектирование интерактивной 3D-книги, музейный арт-дирекшн, 
+                микроанимации и полная кроссплатформенная верстка под экраны мобильных устройств.
+              </p>
+            </div>
+          </li>
+
+          <!-- Member 2 -->
+          <li class="team-member-item" tabindex="0">
+            <div class="member-bar">
+              <span class="member-idx">02</span>
+              <span class="member-name">Шаповалов Егор Антонович</span>
+              <span class="member-icon-trigger">+</span>
+            </div>
+            
+            <!-- Popover Card -->
+            <div class="member-popover" role="tooltip">
+              <div class="popover-texture" aria-hidden="true"></div>
+              <div class="popover-badge">Графический дизайнер</div>
+              <h4 class="popover-role">Поиск референсов • Создание мудборда</h4>
+              <p class="popover-desc">
+                Исследование музейных эстетик dark-editorial, проработка винтажной цветовой гаммы 
+                (состаренная бумага, сургуч, латунь), подбор шрифтовых пар и стилистических акцентов.
+              </p>
+            </div>
+          </li>
+
+          <!-- Member 3 -->
+          <li class="team-member-item" tabindex="0">
+            <div class="member-bar">
+              <span class="member-idx">03</span>
+              <span class="member-name">Галиуллин Роман Денисович</span>
+              <span class="member-icon-trigger">+</span>
+            </div>
+            
+            <!-- Popover Card -->
+            <div class="member-popover" role="tooltip">
+              <div class="popover-texture" aria-hidden="true"></div>
+              <div class="popover-badge">Копирайтер</div>
+              <h4 class="popover-role">Создание физических карточек • Копирайтер</h4>
+              <p class="popover-desc">
+                Написание исторического драматургического нарратива, адаптация цитат Островского, 
+                подготовка полиграфических карточек экспозиции для книжных полок библиотеки.
+              </p>
+            </div>
+          </li>
+
+          <!-- Member 4 -->
+          <li class="team-member-item" tabindex="0">
+            <div class="member-bar">
+              <span class="member-idx">04</span>
+              <span class="member-name">Габидуллин Данил Рустамович</span>
+              <span class="member-icon-trigger">+</span>
+            </div>
+            
+            <!-- Popover Card -->
+            <div class="member-popover" role="tooltip">
+              <div class="popover-texture" aria-hidden="true"></div>
+              <div class="popover-badge">Иллюстратор</div>
+              <h4 class="popover-role">Авторский арт к пьесе «Гроза»</h4>
+              <p class="popover-desc">
+                Создание главного экспозиционного полотна выставки — образа Катерины на обрыве 
+                над Волгой («Ключ над обрывом»), передающего трагический излом старого купеческого мира.
+              </p>
+            </div>
+          </li>
+
+          <!-- Member 5 -->
+          <li class="team-member-item" tabindex="0">
+            <div class="member-bar">
+              <span class="member-idx">05</span>
+              <span class="member-name">Колосков Андрей Сергеевич</span>
+              <span class="member-icon-trigger">+</span>
+            </div>
+            
+            <!-- Popover Card -->
+            <div class="member-popover" role="tooltip">
+              <div class="popover-texture" aria-hidden="true"></div>
+              <div class="popover-badge">Исследователь</div>
+              <h4 class="popover-role">Подбор архивных исходников</h4>
+              <p class="popover-desc">
+                Архивные изыскания: поиск театральных эскизов декораций и костюмов Малого и Художественного 
+                театров, исторических картин Кустодиева и портретов великих меценатов России.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Bottom Imprint -->
+      <div class="footer-bottom-row">
+        <div class="bottom-copy">
+          © 2026 Интерактивный выставочный проект. Все права на архивные материалы принадлежат их авторам и фондам.
+        </div>
+        <div class="bottom-back-top">
+          <a href="#hero" class="btn-back-top">
+            <span>В НАЧАЛО ЭКСПОЗИЦИИ</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Artwork Inspection Lightbox Modal -->
+  <div class="art-modal-backdrop" id="art-inspect-modal" aria-hidden="true">
+    <div class="art-modal-frame" role="dialog" aria-modal="true" aria-label="Детальный осмотр полотна">
+      <button type="button" class="art-modal-close" id="btn-close-inspect" aria-label="Закрыть просмотр полотна">✕ Закрыть</button>
+      <div class="art-modal-body">
+        <div class="modal-art-view">
+          <img src="assets/hero-art.png" alt="«Ключ над обрывом» Д. Габидуллин, авторский арт" class="modal-full-img">
+        </div>
+        <div class="modal-art-details">
+          <span class="modal-badge">ЭКСПОЗИЦИОННЫЙ АНАЛИЗ</span>
+          <h3 class="modal-title">«Ключ над обрывом»</h3>
+          <div class="modal-author">Автор: Данил Габидуллин • Специально для выставки</div>
+          <div class="modal-divider"></div>
+          <p class="modal-text">
+            Художник фиксирует кульминационную секунду внутренней борьбы Катерины: за спиной — душная тьма калиновского 
+            домостроя и запертая калитка; в руке — ключ, ставший символом запретной любви к Борису; 
+            впереди — обрыв над Волгой, где сливаются воедино жажда полета («Отчего люди не летают так, как птицы?») 
+            и трагический омут.
+          </p>
+          <div class="modal-spec-row">
+            <span class="spec-label">Техника:</span>
+            <span class="spec-value">Цифровая живопись / пастельная текстура</span>
+          </div>
+          <div class="modal-spec-row">
+            <span class="spec-label">Разрешение:</span>
+            <span class="spec-value">1920 × 1080 px • Музейный архив</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
