@@ -2,5 +2,6 @@
 Thumbs.db
 *.zip
 *.log
+deploy.bat
 .vscode/
 .idea/
